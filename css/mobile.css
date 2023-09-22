@@ -1,0 +1,147 @@
+/**************************/
+/* BELOW 600px (Mobiles) */
+/**************************/
+
+@media (max-width: 600px) {
+  .nav-bar{
+    display: block;
+    margin-left: 30px;
+  }
+
+  .nav-left{
+    float: none;
+    display: block;
+  }
+
+  .nav-right{
+    float: none;
+    display: block;
+  }
+
+  .nav-content a {
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    gap: 0.2rem;
+    padding:  1rem  ;
+    border: none;
+  }
+
+  .about{
+    display: block;
+  }
+
+  .grid--3--cols{
+    display: block;
+  }
+
+  .job-content{
+    margin: 20px;
+  }
+
+  .certificate{
+    display: flex;
+    justify-content: center;
+  }
+
+  .certificate-content{
+    display: block;
+    height: auto;
+  }
+
+  .even:before{
+    display: none;
+  }
+
+  .certificate-content::before{
+    display: none;
+  }
+
+  .certificate-img{
+    width: 70%;
+  }
+
+  .certificate-item{
+    padding: 16px;
+    border-bottom: 1px solid orangered ;
+  }
+
+  .project{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+
+  .project-content{
+    display: block;
+    
+  }
+
+  .project-item{
+    padding: 10px;
+  }
+
+  .project-bar{
+    display: block;
+    line-height: 1.6;
+  }
+
+  .project-year{
+    padding: 4px 0 4px 6px;
+  }
+
+  .contact-media{
+    display: none;
+  }
+
+  /* DIGITAL CV */
+  .digital-cv{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .project-goals{
+    display: block;
+    line-height: 1.2;
+  }
+
+  .goal-icon{
+    text-align: center;
+  }
+
+  .project-team{
+    display: block;
+    line-height: 1.2;
+  }
+
+  .team-icon{
+    text-align: center;
+  }
+
+  .project-timeline{
+    display: block;
+    line-height: 1.2;
+  }
+
+  .scopes{
+    grid-row: 2;
+  }
+
+  .scope{
+    display: block;
+    line-height: 1.2;
+  }
+
+  .primary{
+    grid-row: 4;
+  }
+
+  .project-primary{
+    display: block;
+    line-height: 1.2;
+  }
+
+  .primary-icon{
+    text-align: center;
+  }
+}
