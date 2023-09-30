@@ -1,5 +1,6 @@
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -311,19 +312,20 @@ body {
 .certificate-content{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 3.6rem;
+  gap: 3.6rem;
   position: relative;
-  height: auto;
+}
+
+.certificate-item{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 .certificate-name{
   text-transform: uppercase;
-}
-
-.certificate-item{
-  display: flex;
-  gap: 1rem;
-  
+  font-weight: 600;
+  padding-bottom: 8px;
 }
 
 .certificate-content::before{
@@ -340,14 +342,13 @@ body {
   content: "";
   position: absolute;
   background: #d6c08d;
-  margin-left: -2rem;
   top: 0;
   bottom: 60%;
   width: 1px;
 }
 
 .certificate-img{
-  width: 36%;
+  width: 100%;
 }
 
 
@@ -361,7 +362,6 @@ body {
 
 .project-detail{
   border: 1px solid #ced4da;
-  height: 250px;
 }
 
 .project-content{
@@ -384,7 +384,8 @@ body {
 }
 
 .project-bar {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 0.8rem;
   font-size: 0.9rem;
 }
@@ -397,13 +398,12 @@ body {
 
 .project-year{
   display: block;
-  height: 16px;
-  width: 30px;
   color: #fff;
   background-color: #228be6;
   border-radius: 8px;
   padding: 4px 6px;
   margin-right: 2rem;
+  width: fit-content;
 }
 
 .project-company{
@@ -424,8 +424,16 @@ body {
   padding: 0.8rem;
 }
 
-td{
-  border-top: 1px solid #ced4da;
+.project-description table {
+  border-collapse: collapse;
+}
+
+.project-description td{
+  border: 1px solid #ced4da;
+}
+
+.project-description td:nth-child(2){
+  padding: 8px;
 }
 
 /* FOOTER */

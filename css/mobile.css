@@ -2,7 +2,7 @@
 /* BELOW 600px (Mobiles) */
 /**************************/
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 767px) {
   .nav-bar{
     display: block;
     margin-left: 30px;
@@ -27,6 +27,10 @@
     border: none;
   }
 
+  .nav-bar-profile{
+    display: none;
+  }
+
   .about{
     display: block;
   }
@@ -37,11 +41,6 @@
 
   .job-content{
     margin: 20px;
-  }
-
-  .certificate{
-    display: flex;
-    justify-content: center;
   }
 
   .certificate-content{
@@ -55,10 +54,6 @@
 
   .certificate-content::before{
     display: none;
-  }
-
-  .certificate-img{
-    width: 70%;
   }
 
   .certificate-item{
@@ -84,10 +79,6 @@
   .project-bar{
     display: block;
     line-height: 1.6;
-  }
-
-  .project-year{
-    padding: 4px 0 4px 6px;
   }
 
   .contact-media{
